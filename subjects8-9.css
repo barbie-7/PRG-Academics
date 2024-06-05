@@ -370,7 +370,23 @@ h5{
   }
   
   
+  footer {
+    position: relative;
+    height: 9px;
+    width: 100%;
+    
+}
 
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #000000;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #ffffff;
+}
+  
 
 @media (max-width:1635px){
     .sujectcard{
@@ -410,7 +426,7 @@ h5{
         left: 0;
         width: 100%;
         height:  0;
-        background: rgba(0, 0, 0, 0.434);
+        background: rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         overflow: hidden;
@@ -532,3 +548,18 @@ h5{
         padding: 20px 5px;
     }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio:3){
+    .navbar{
+        -webkit-backdrop-filter: blur(50px);
+    }
+
+    .header{
+        -webkit-backdrop-filter: blur(50px);
+    } 
+}
+@media (max-width: 375px) {
+    .footerP{
+      font-size: 13px;
+    }
+  }

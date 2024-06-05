@@ -5,7 +5,10 @@
   font-family: 'poppins',sans-serif;
 }
 
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-psadding, 1rem);
+}
   
   .navigation {
     position: fixed;
@@ -84,10 +87,20 @@
 }
 
 body{
+    min-height: 100vh;  
+   
+}
+
+.banner{
     min-height: 100vh;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(image14.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(imgLouw1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+
+    align-items: center;
+    justify-content: center;
+
+    
 }
 .header{
     position: fixed;
@@ -224,6 +237,28 @@ body{
       border: none;
   }
   
+
+
+
+
+
+footer {
+    position: relative;
+    height: 9px;
+    width: 100%;
+    
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #c1c1c1;
+}
+
   @media (max-width: 1145px) {
     .icons{
         display: inline-flex;
@@ -277,7 +312,10 @@ body{
     font-size: 50px;
 }
 .content p{
-    font-size: 12px;
+    font-size: 13px;
+}
+.footer{
+    font-size: 13px;
 }
 }
 @media (max-width: 675px) {
@@ -285,7 +323,7 @@ body{
         font-size: 40px;
     }
     .content p{
-        font-size: 11px;
+        font-size: 13px;
     }
     button{
         width: 170px; 
@@ -297,7 +335,7 @@ body{
         font-size: 30px;
     }
     .content p{
-        font-size: 11px;
+        font-size: 13px;
     }
     button{
         width: 160px; 
@@ -308,9 +346,11 @@ body{
         font-size: 30px;
     }
     .content p{
-        font-size: 11px;
+        font-size: 13px;
     }
     button{
         width: 160px; 
     }
 }
+
+
